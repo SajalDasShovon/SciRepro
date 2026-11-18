@@ -1,0 +1,395 @@
+participant_id,timestamp,prompt_type,activity
+P01,2025-07-07 10:07:09,random,sitting
+P01,2025-07-07 11:47:57,random,sitting
+P01,2025-07-07 15:23:23,random,lying down
+P01,2025-07-07 16:34:48,random,sitting
+P01,2025-07-07 20:05:38,random,sitting
+P01,2025-07-08 09:06:08,random,sitting
+P01,2025-07-08 12:26:45,random,standing
+P01,2025-07-08 13:47:28,random,sitting
+P01,2025-07-08 18:20:00,random,
+P01,2025-07-08 19:56:16,random,lying down
+P01,2025-07-09 10:14:50,random,sitting
+P01,2025-07-09 11:15:07,random,sitting
+P01,2025-07-09 13:57:33,random,sitting
+P01,2025-07-09 17:32:24,random,sitting
+P01,2025-07-09 18:20:54,self-initiated,exercise
+P01,2025-07-09 22:04:55,random,sitting
+P01,2025-07-10 08:38:12,random,lying down
+P01,2025-07-10 12:10:47,random,sitting
+P01,2025-07-10 14:20:01,random,sitting
+P01,2025-07-10 17:26:11,random,lying down
+P01,2025-07-10 19:18:15,self-initiated,exercise
+P01,2025-07-10 21:21:27,random,sitting
+P01,2025-07-11 09:03:00,random,
+P01,2025-07-11 12:12:35,random,sitting
+P01,2025-07-11 15:17:10,random,standing
+P01,2025-07-11 17:48:00,self-initiated,exercise
+P01,2025-07-11 18:52:23,random,sitting
+P01,2025-07-11 21:25:00,random,
+P01,2025-07-12 08:32:00,random,
+P01,2025-07-12 12:07:46,random,walking
+P01,2025-07-12 13:40:14,random,walking
+P01,2025-07-12 16:54:20,random,lying down
+P01,2025-07-12 19:01:32,self-initiated,exercise
+P01,2025-07-12 21:03:27,random,sitting
+P01,2025-07-13 09:45:57,random,lying down
+P01,2025-07-13 12:39:13,random,walking
+P01,2025-07-13 15:05:43,random,sitting
+P01,2025-07-13 17:27:22,random,sitting
+P01,2025-07-13 21:20:47,random,sitting
+P02,2025-07-07 10:44:58,random,standing
+P02,2025-07-07 13:26:53,random,walking
+P02,2025-07-07 13:56:38,random,sitting
+P02,2025-07-07 19:11:33,random,standing
+P02,2025-07-07 21:40:30,random,sitting
+P02,2025-07-08 10:33:37,random,standing
+P02,2025-07-08 12:17:50,random,sitting
+P02,2025-07-08 14:35:07,random,lying down
+P02,2025-07-08 18:16:59,self-initiated,exercise
+P02,2025-07-08 18:41:50,random,exercise
+P02,2025-07-08 21:58:23,random,sitting
+P02,2025-07-09 10:46:15,random,sitting
+P02,2025-07-09 12:23:05,random,sitting
+P02,2025-07-09 14:26:00,random,
+P02,2025-07-09 17:09:57,random,sitting
+P02,2025-07-09 17:46:28,self-initiated,exercise
+P02,2025-07-09 20:13:00,random,
+P02,2025-07-10 10:29:00,random,
+P02,2025-07-10 12:56:51,random,walking
+P02,2025-07-10 14:59:00,random,
+P02,2025-07-10 17:04:22,random,lying down
+P02,2025-07-10 19:27:08,self-initiated,exercise
+P02,2025-07-10 20:40:08,random,sitting
+P02,2025-07-11 08:09:53,random,walking
+P02,2025-07-11 11:52:00,random,
+P02,2025-07-11 14:11:26,random,sitting
+P02,2025-07-11 17:40:43,random,sitting
+P02,2025-07-11 19:18:31,self-initiated,exercise
+P02,2025-07-11 20:49:00,random,
+P02,2025-07-12 08:31:00,random,
+P02,2025-07-12 11:59:59,random,sitting
+P02,2025-07-12 14:40:00,random,
+P02,2025-07-12 16:31:00,random,
+P02,2025-07-12 17:46:21,self-initiated,exercise
+P02,2025-07-12 21:51:34,random,sitting
+P02,2025-07-13 10:43:36,random,standing
+P02,2025-07-13 13:03:15,random,walking
+P02,2025-07-13 15:40:03,random,sitting
+P02,2025-07-13 17:11:37,random,sitting
+P02,2025-07-13 18:10:55,self-initiated,exercise
+P02,2025-07-13 20:49:11,random,sitting
+P03,2025-07-07 08:54:10,random,lying down
+P03,2025-07-07 11:58:42,random,sitting
+P03,2025-07-07 14:40:23,random,standing
+P03,2025-07-07 19:02:00,random,
+P03,2025-07-07 21:14:59,random,sitting
+P03,2025-07-08 09:42:56,random,sitting
+P03,2025-07-08 12:31:41,random,standing
+P03,2025-07-08 13:49:00,random,
+P03,2025-07-08 16:50:00,random,
+P03,2025-07-08 17:57:37,self-initiated,exercise
+P03,2025-07-08 20:14:42,random,sitting
+P03,2025-07-09 08:52:00,random,
+P03,2025-07-09 12:09:19,random,walking
+P03,2025-07-09 14:13:38,random,sitting
+P03,2025-07-09 18:44:33,random,sitting
+P03,2025-07-09 21:26:01,random,sitting
+P03,2025-07-10 09:05:13,random,sitting
+P03,2025-07-10 13:01:09,random,walking
+P03,2025-07-10 15:25:32,random,walking
+P03,2025-07-10 18:03:56,random,walking
+P03,2025-07-10 18:38:23,self-initiated,exercise
+P03,2025-07-10 20:34:58,random,sitting
+P03,2025-07-11 10:23:29,random,standing
+P03,2025-07-11 13:38:39,random,sitting
+P03,2025-07-11 14:47:21,random,lying down
+P03,2025-07-11 17:46:39,self-initiated,exercise
+P03,2025-07-11 18:47:00,random,
+P03,2025-07-11 20:34:33,random,sitting
+P03,2025-07-12 10:00:53,random,lying down
+P03,2025-07-12 12:58:24,random,sitting
+P03,2025-07-12 15:55:19,random,sitting
+P03,2025-07-12 17:03:48,random,sitting
+P03,2025-07-12 19:17:16,self-initiated,exercise
+P03,2025-07-12 19:20:16,random,exercise
+P03,2025-07-13 10:27:00,random,
+P03,2025-07-13 13:15:07,random,sitting
+P03,2025-07-13 15:47:55,random,sitting
+P03,2025-07-13 18:59:56,random,sitting
+P03,2025-07-13 20:54:43,random,lying down
+P04,2025-07-07 10:04:19,random,sitting
+P04,2025-07-07 12:24:51,random,lying down
+P04,2025-07-07 15:50:43,random,sitting
+P04,2025-07-07 18:00:37,random,sitting
+P04,2025-07-07 18:39:39,self-initiated,exercise
+P04,2025-07-07 20:39:44,random,sitting
+P04,2025-07-08 08:08:43,random,sitting
+P04,2025-07-08 11:04:20,random,sitting
+P04,2025-07-08 16:04:36,random,sitting
+P04,2025-07-08 17:34:32,random,sitting
+P04,2025-07-08 19:57:48,random,sitting
+P04,2025-07-09 08:24:41,random,lying down
+P04,2025-07-09 13:15:00,random,
+P04,2025-07-09 13:43:30,random,lying down
+P04,2025-07-09 19:04:25,self-initiated,exercise
+P04,2025-07-09 19:08:00,random,
+P04,2025-07-09 21:12:56,random,sitting
+P04,2025-07-10 09:48:35,random,sitting
+P04,2025-07-10 12:39:54,random,lying down
+P04,2025-07-10 13:58:41,random,sitting
+P04,2025-07-10 16:39:08,random,sitting
+P04,2025-07-10 17:56:50,self-initiated,exercise
+P04,2025-07-10 21:15:00,random,
+P04,2025-07-11 09:25:41,random,sitting
+P04,2025-07-11 12:26:10,random,walking
+P04,2025-07-11 16:18:00,random,
+P04,2025-07-11 17:43:00,random,
+P04,2025-07-11 18:12:05,self-initiated,exercise
+P04,2025-07-11 20:04:11,random,sitting
+P04,2025-07-12 09:35:27,random,standing
+P04,2025-07-12 12:28:02,random,sitting
+P04,2025-07-12 14:08:20,random,standing
+P04,2025-07-12 18:39:00,random,
+P04,2025-07-12 19:19:53,random,lying down
+P04,2025-07-13 10:15:59,random,sitting
+P04,2025-07-13 12:09:50,random,sitting
+P04,2025-07-13 14:43:22,random,sitting
+P04,2025-07-13 17:04:35,random,walking
+P04,2025-07-13 17:47:26,self-initiated,exercise
+P04,2025-07-13 19:22:00,random,
+P05,2025-07-07 10:07:02,random,sitting
+P05,2025-07-07 12:07:02,random,standing
+P05,2025-07-07 16:21:06,random,standing
+P05,2025-07-07 17:42:10,self-initiated,exercise
+P05,2025-07-07 17:58:00,random,
+P05,2025-07-07 21:58:06,random,sitting
+P05,2025-07-08 08:13:19,random,sitting
+P05,2025-07-08 10:51:09,random,standing
+P05,2025-07-08 14:08:08,random,sitting
+P05,2025-07-08 16:36:16,random,sitting
+P05,2025-07-08 18:22:32,self-initiated,exercise
+P05,2025-07-08 22:01:54,random,sitting
+P05,2025-07-09 09:19:00,random,
+P05,2025-07-09 11:23:52,random,sitting
+P05,2025-07-09 15:28:09,random,sitting
+P05,2025-07-09 19:05:05,random,sitting
+P05,2025-07-09 19:26:45,self-initiated,exercise
+P05,2025-07-09 21:16:55,random,sitting
+P05,2025-07-10 09:42:16,random,standing
+P05,2025-07-10 12:42:55,random,walking
+P05,2025-07-10 14:31:00,random,
+P05,2025-07-10 17:34:00,random,
+P05,2025-07-10 21:54:35,random,lying down
+P05,2025-07-11 08:14:00,random,
+P05,2025-07-11 11:47:12,random,standing
+P05,2025-07-11 14:54:04,random,lying down
+P05,2025-07-11 18:44:53,random,sitting
+P05,2025-07-11 19:45:53,random,sitting
+P05,2025-07-12 08:18:14,random,sitting
+P05,2025-07-12 12:58:56,random,sitting
+P05,2025-07-12 14:51:21,random,sitting
+P05,2025-07-12 17:46:00,random,
+P05,2025-07-12 19:37:48,random,standing
+P05,2025-07-13 09:35:10,random,walking
+P05,2025-07-13 11:58:03,random,standing
+P05,2025-07-13 14:04:17,random,sitting
+P05,2025-07-13 16:59:00,random,
+P05,2025-07-13 18:22:45,self-initiated,exercise
+P05,2025-07-13 20:32:33,random,lying down
+P06,2025-07-07 10:40:15,random,sitting
+P06,2025-07-07 12:43:37,random,sitting
+P06,2025-07-07 14:45:25,random,sitting
+P06,2025-07-07 18:30:46,random,sitting
+P06,2025-07-07 21:25:04,random,exercise
+P06,2025-07-08 09:40:22,random,standing
+P06,2025-07-08 12:30:00,random,
+P06,2025-07-08 14:53:43,random,sitting
+P06,2025-07-08 17:49:48,random,sitting
+P06,2025-07-08 20:17:22,random,standing
+P06,2025-07-09 10:49:46,random,walking
+P06,2025-07-09 12:41:45,random,sitting
+P06,2025-07-09 16:20:42,random,sitting
+P06,2025-07-09 18:31:00,random,
+P06,2025-07-09 18:59:51,self-initiated,exercise
+P06,2025-07-09 19:17:14,random,exercise
+P06,2025-07-10 09:21:47,random,sitting
+P06,2025-07-10 11:40:13,random,sitting
+P06,2025-07-10 16:02:00,random,
+P06,2025-07-10 16:32:46,random,sitting
+P06,2025-07-10 19:24:54,self-initiated,exercise
+P06,2025-07-10 20:34:43,random,sitting
+P06,2025-07-11 08:33:23,random,sitting
+P06,2025-07-11 13:38:56,random,sitting
+P06,2025-07-11 14:45:20,random,walking
+P06,2025-07-11 18:24:42,self-initiated,exercise
+P06,2025-07-11 18:39:00,random,
+P06,2025-07-11 21:52:48,random,sitting
+P06,2025-07-12 08:53:49,random,sitting
+P06,2025-07-12 11:33:00,random,
+P06,2025-07-12 14:24:39,random,standing
+P06,2025-07-12 19:05:10,random,sitting
+P06,2025-07-12 21:15:00,random,
+P06,2025-07-13 09:39:01,random,sitting
+P06,2025-07-13 11:33:39,random,lying down
+P06,2025-07-13 16:12:35,random,sitting
+P06,2025-07-13 17:49:30,self-initiated,exercise
+P06,2025-07-13 18:53:31,random,sitting
+P06,2025-07-13 20:01:23,random,standing
+P07,2025-07-07 09:42:23,random,lying down
+P07,2025-07-07 11:49:00,random,
+P07,2025-07-07 16:05:00,random,
+P07,2025-07-07 18:02:42,random,sitting
+P07,2025-07-07 19:30:45,random,sitting
+P07,2025-07-08 09:24:00,random,
+P07,2025-07-08 11:32:00,random,
+P07,2025-07-08 15:38:15,random,sitting
+P07,2025-07-08 17:04:00,random,
+P07,2025-07-08 20:20:53,random,sitting
+P07,2025-07-09 10:29:12,random,walking
+P07,2025-07-09 12:46:13,random,sitting
+P07,2025-07-09 14:01:45,random,lying down
+P07,2025-07-09 17:57:28,random,standing
+P07,2025-07-09 21:46:40,random,sitting
+P07,2025-07-10 07:38:59,self-initiated,exercise
+P07,2025-07-10 09:04:36,random,lying down
+P07,2025-07-10 11:09:26,random,standing
+P07,2025-07-10 14:03:58,random,lying down
+P07,2025-07-10 17:36:33,random,lying down
+P07,2025-07-10 19:45:00,random,
+P07,2025-07-11 06:37:20,self-initiated,exercise
+P07,2025-07-11 09:21:00,random,
+P07,2025-07-11 11:53:47,random,walking
+P07,2025-07-11 14:32:00,random,
+P07,2025-07-11 18:07:28,random,lying down
+P07,2025-07-11 19:58:32,random,standing
+P07,2025-07-12 07:44:34,self-initiated,exercise
+P07,2025-07-12 10:34:54,random,sitting
+P07,2025-07-12 12:26:43,random,walking
+P07,2025-07-12 14:18:00,random,
+P07,2025-07-12 16:33:07,random,lying down
+P07,2025-07-12 21:01:48,random,sitting
+P07,2025-07-13 08:33:44,self-initiated,exercise
+P07,2025-07-13 08:44:46,random,exercise
+P07,2025-07-13 11:38:37,random,sitting
+P07,2025-07-13 14:18:28,random,sitting
+P07,2025-07-13 19:10:13,random,standing
+P07,2025-07-13 20:18:33,random,sitting
+P08,2025-07-07 08:38:59,random,sitting
+P08,2025-07-07 10:57:45,random,lying down
+P08,2025-07-07 15:47:00,random,
+P08,2025-07-07 19:09:14,random,sitting
+P08,2025-07-07 20:33:22,random,lying down
+P08,2025-07-08 08:50:20,random,standing
+P08,2025-07-08 11:44:49,random,sitting
+P08,2025-07-08 14:28:05,random,sitting
+P08,2025-07-08 17:35:54,self-initiated,exercise
+P08,2025-07-08 18:34:44,random,exercise
+P08,2025-07-08 21:59:19,random,standing
+P08,2025-07-09 09:30:42,random,standing
+P08,2025-07-09 12:22:01,random,walking
+P08,2025-07-09 15:21:49,random,walking
+P08,2025-07-09 17:09:00,random,
+P08,2025-07-09 20:05:35,random,sitting
+P08,2025-07-10 09:10:33,random,sitting
+P08,2025-07-10 13:16:36,random,sitting
+P08,2025-07-10 16:18:11,random,exercise
+P08,2025-07-10 16:54:29,random,sitting
+P08,2025-07-10 19:19:40,self-initiated,exercise
+P08,2025-07-10 20:09:17,random,walking
+P08,2025-07-11 09:06:54,random,lying down
+P08,2025-07-11 11:55:17,random,sitting
+P08,2025-07-11 15:41:00,random,
+P08,2025-07-11 19:07:54,random,sitting
+P08,2025-07-11 21:24:00,random,
+P08,2025-07-12 10:38:00,random,
+P08,2025-07-12 13:31:00,random,
+P08,2025-07-12 14:52:06,random,sitting
+P08,2025-07-12 18:17:00,random,
+P08,2025-07-12 18:22:15,self-initiated,exercise
+P08,2025-07-12 21:14:00,random,
+P08,2025-07-13 08:22:00,random,
+P08,2025-07-13 12:42:00,random,
+P08,2025-07-13 14:59:04,random,lying down
+P08,2025-07-13 16:55:18,random,sitting
+P08,2025-07-13 18:04:20,self-initiated,exercise
+P08,2025-07-13 21:14:11,random,sitting
+P09,2025-07-07 07:20:59,self-initiated,exercise
+P09,2025-07-07 10:42:21,random,sitting
+P09,2025-07-07 12:58:41,random,walking
+P09,2025-07-07 15:51:18,random,sitting
+P09,2025-07-07 17:35:28,random,sitting
+P09,2025-07-07 19:25:00,random,
+P09,2025-07-08 07:14:35,self-initiated,exercise
+P09,2025-07-08 08:10:00,random,
+P09,2025-07-08 13:18:56,random,sitting
+P09,2025-07-08 15:49:36,random,sitting
+P09,2025-07-08 18:39:48,random,lying down
+P09,2025-07-08 21:10:09,random,lying down
+P09,2025-07-09 07:12:41,self-initiated,exercise
+P09,2025-07-09 09:18:02,random,sitting
+P09,2025-07-09 11:03:30,random,sitting
+P09,2025-07-09 14:07:22,random,sitting
+P09,2025-07-09 17:06:00,random,
+P09,2025-07-09 21:41:35,random,sitting
+P09,2025-07-10 07:44:12,self-initiated,exercise
+P09,2025-07-10 10:23:00,random,
+P09,2025-07-10 12:32:27,random,lying down
+P09,2025-07-10 14:55:41,random,sitting
+P09,2025-07-10 19:12:47,random,sitting
+P09,2025-07-10 21:45:56,random,sitting
+P09,2025-07-11 08:13:00,random,
+P09,2025-07-11 11:28:23,random,sitting
+P09,2025-07-11 15:22:33,random,lying down
+P09,2025-07-11 17:08:44,random,sitting
+P09,2025-07-11 21:25:21,random,walking
+P09,2025-07-12 07:21:34,self-initiated,exercise
+P09,2025-07-12 08:22:00,random,
+P09,2025-07-12 11:33:08,random,standing
+P09,2025-07-12 14:19:00,random,
+P09,2025-07-12 17:52:07,random,sitting
+P09,2025-07-12 20:18:40,random,sitting
+P09,2025-07-13 10:41:12,random,walking
+P09,2025-07-13 12:57:36,random,sitting
+P09,2025-07-13 15:13:13,random,sitting
+P09,2025-07-13 16:45:00,random,
+P09,2025-07-13 19:16:15,random,lying down
+P10,2025-07-07 10:34:55,random,lying down
+P10,2025-07-07 12:46:20,random,lying down
+P10,2025-07-07 14:16:26,random,sitting
+P10,2025-07-07 17:49:31,random,sitting
+P10,2025-07-07 21:59:19,random,lying down
+P10,2025-07-08 09:13:50,random,walking
+P10,2025-07-08 11:54:49,random,walking
+P10,2025-07-08 16:07:00,random,
+P10,2025-07-08 16:41:20,random,standing
+P10,2025-07-08 20:55:40,random,lying down
+P10,2025-07-09 08:33:01,random,lying down
+P10,2025-07-09 13:00:23,random,sitting
+P10,2025-07-09 14:18:46,random,sitting
+P10,2025-07-09 17:08:06,random,sitting
+P10,2025-07-09 18:08:40,self-initiated,exercise
+P10,2025-07-09 20:54:23,random,lying down
+P10,2025-07-10 08:26:23,random,lying down
+P10,2025-07-10 11:29:53,random,sitting
+P10,2025-07-10 14:52:03,random,sitting
+P10,2025-07-10 17:43:34,random,lying down
+P10,2025-07-10 18:00:14,self-initiated,exercise
+P10,2025-07-10 20:14:07,random,sitting
+P10,2025-07-11 10:40:30,random,sitting
+P10,2025-07-11 13:13:53,random,sitting
+P10,2025-07-11 15:52:31,random,sitting
+P10,2025-07-11 18:20:20,random,sitting
+P10,2025-07-11 19:03:38,self-initiated,exercise
+P10,2025-07-11 20:24:03,random,sitting
+P10,2025-07-12 08:47:35,random,walking
+P10,2025-07-12 12:24:16,random,lying down
+P10,2025-07-12 16:05:39,random,sitting
+P10,2025-07-12 17:57:10,random,sitting
+P10,2025-07-12 19:23:00,self-initiated,exercise
+P10,2025-07-12 20:49:43,random,sitting
+P10,2025-07-13 08:31:01,random,sitting
+P10,2025-07-13 10:52:54,random,sitting
+P10,2025-07-13 13:42:00,random,
+P10,2025-07-13 18:40:41,random,sitting
+P10,2025-07-13 21:09:00,random,

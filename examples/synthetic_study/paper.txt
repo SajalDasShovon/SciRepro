@@ -1,0 +1,1 @@
+Synthetic wearable/EMA study for testing scientific code auditing. The analysis code contains a deliberately hidden time alignment issue. See study.txt for the study briefing.

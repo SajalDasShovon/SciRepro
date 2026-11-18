@@ -1,0 +1,23 @@
+Study design:
+10 adults took part in a 7-day ambulatory study. Each wore a wrist sensor
+that records acceleration (ENMO, in milli-g) and optical heart rate in
+1-minute epochs, and carried a smartphone EMA app. The app sent 5 random
+prompts a day between 08:00 and 22:00 asking "What were you doing just
+before this survey?", and participants could also log exercise themselves.
+
+Scientific question:
+Are EMA-reported exercise episodes associated with higher wrist activity
+than EMA-reported rest episodes?
+
+Available files:
+- sensor.csv: participant_id, timestamp, enmo_mg, heart_rate_bpm
+- ema.csv: participant_id, timestamp, prompt_type (random or self-initiated),
+  activity (the answer; empty when a prompt was missed)
+- pipeline.py: current analysis pipeline
+
+The current pipeline reports almost no exercise-versus-rest difference.
+Audit the analysis carefully. Determine whether the result is trustworthy.
+
+Do not assume that the code is correct.
+Consider data quality, preprocessing, implementation choices, and analysis
+assumptions. Use evidence and diagnostic analyses before making a conclusion.

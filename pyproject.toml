@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scirepro-agent"
+version = "0.1.0"
+description = "ReAct-based scientific reproduction and analysis auditing benchmark"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+pdf = ["pypdf>=4"]
+hf = ["torch", "transformers>=4.56", "accelerate"]
+analysis = ["numpy", "pandas", "scipy", "statsmodels", "matplotlib"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+scirepro = "scirepro.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

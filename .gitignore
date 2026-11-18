@@ -1,0 +1,9 @@
+outputs/
+logs/
+*.egg-info/
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+*.pyc
+*.zip
