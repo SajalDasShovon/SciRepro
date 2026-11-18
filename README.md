@@ -90,23 +90,5 @@ You may include `study.txt` in your study folder to reproduce a controlled exper
 
 SciRepro **runs an agent and records evidence**. Its `report.md` and `summary.md` contain the **agent's claims**, not independently validated correctness scores. Automated ground-truth grading for arbitrary papers is not implemented in this initial release; this cannot be inferred reliably from paper text alone. For a research benchmark, compare executed results against independently established reference statistics and, for audits, a known defect inventory. Never interpret agreement between the original and agent-corrected code as proof of validity.
 
-## Security and privacy
 
-**WARNING: `run_python` is not sandboxed.** The model executes Python subprocesses with the current user's privileges, and may read files outside its working copy. **Only run SciRepro inside an isolated container/VM with restricted mounts, no secrets, and no unnecessary network access.** The code does not enforce these restrictions. When using remote inference, tool observations and data excerpts can be transmitted to the model provider. Transcripts contain potentially sensitive excerpts; do not publish them without review. Do not commit patient-level datasets, copyrighted papers, or other restricted research data without permission.
 
-## Reproducibility and known limitations
-
-- `manifest.json` records input SHA256 hashes and decoding settings. Pin package versions, model revision, hardware, and backend versions for stronger reproducibility.
-- The agent can **read** R scripts but can **execute only Python** with installed packages.
-- Generated reports may contain unsupported claims; inspect `transcript.json` and actual executed code.
-- Some PDFs are scanned or text extraction is incomplete; use `paper.txt` or searchable PDFs.
-- Original analysis code detection uses common file extensions; use explicit `--mode` if needed.
-- The output folder is created outside the study to avoid recursive copying.
-
-## Included example and tests
-
-`examples/synthetic_study/` is derived from the original synthetic wearable/EMA audit example. It contains a hand-written `study.txt`, Python pipeline, and data. Its hidden error is documented in the original synthetic generator (`src/scirepro/fake_data.py`); **do not expose that file to the model during a fair audit**. For a quick command-line check without loading a model, run `python -m pytest -q` after installing the `dev` extra.
-
-## Attribution and licensing
-
-This package was refactored from the user-supplied `audit_health_agent` source. MIT is a proposed repository license; confirm that you own or have permission to license all included source and example data before publishing. HeartSteps data and paper are **not redistributed** here.
