@@ -1,94 +1,109 @@
-# SciRepro: LLM Scientific Reproduction & Code Auditing
+# SciRepro: LLM-Based Scientific Reproduction & Code Auditing
 
-A reusable **ReAct-based baseline** for evaluating whether an LLM can reproduce analyses from a published paper and audit original analysis code. Adapted from the supplied `audit_health_agent` implementation; retains its tool-calling loop, Hugging Face and OpenAI-compatible backends, and Python execution tool.
+**SciRepro** is an open-source, ReAct-based framework for evaluating whether Large Language Models (LLMs) can reproduce scientific analyses from published papers and audit existing analysis code.
 
-## Minimal workflow
+Researchers can provide a **scientific paper, datasets, and an LLM of their choice**. SciRepro runs the agent and generates an analysis report and execution transcript.
 
-**1. Install** (Python 3.10+):
+## Quick Start
+
+### 1. Clone and Install
+
+Requires Python 3.10+.
 
 ```bash
-pip install -e '.[pdf,analysis]'
-# For local Hugging Face inference, also install a compatible PyTorch build
-# and: pip install -e '.[hf]'
+git clone https://github.com/SajalDasShovon/SciRepro.git
+cd SciRepro
+
+pip install -e ".[pdf,analysis]"
 ```
 
-**2. Put a paper and data in a folder:**
+For local Hugging Face models, also install a compatible PyTorch build and:
+
+```bash
+pip install -e ".[hf]"
+```
+
+### 2. Prepare Your Study
+
+Organize your paper and datasets as follows:
 
 ```text
 my_study/
-├── paper.pdf             # searchable/text-extractable PDF, or paper.txt
+├── paper.pdf              # Or paper.txt
 ├── data/
-│   ├── participants.csv
-│   └── measurements.csv
-└── analysis/             # OPTIONAL: if supplied, audit runs too
-    └── preprocessing.py
+│   ├── dataset1.csv
+│   └── dataset2.csv
+├── analysis/              # Optional: original analysis code
+│   └── preprocessing.py
+└── study.txt              # Optional: custom instructions
 ```
 
-**3. Run:**
+**Only the paper and data are required.** If `study.txt` is not provided, SciRepro automatically generates initial reproduction instructions.
+
+### 3. Run an LLM Agent
+
+Using the default Qwen model:
 
 ```bash
-scirepro run --model Qwen/Qwen3-Coder-30B-A3B-Instruct --study ./my_study
+scirepro run --study ./my_study
 ```
 
-The default `--mode auto` runs **reproduction only** without original code and **reproduction + auditing** when original analysis code is detected. No `study.txt` is required; if supplied, SciRepro uses it instead of auto-generating instructions. For more controlled experiments, use `--mode reproduce`, `--mode audit`, or `--mode both`.
-
-**Where do results go?** By default, into `./outputs/<UTC-timestamp>_<model>/` relative to **the terminal's current directory**, not the input study folder. Set `--output /path/to/results` to change this.
-
-```text
-outputs/20261118T190000000000Z_Qwen-Qwen3-Coder-30B-A3B-Instruct/
-├── manifest.json               # model, settings, input SHA256 hashes, status
-├── study/                      # untouched working copy of the supplied inputs
-├── reproduce/
-│   ├── study/                  # agent's own writable copy, study.txt, extracted text
-│   ├── transcript.json         # full agent/tool conversation
-│   └── report.md               # agent's final reproduction report
-├── audit/                      # present if audit was run
-│   ├── study/
-│   ├── transcript.json
-│   └── report.md
-└── summary.md                  # combined reports, NOT an accuracy score
-```
-
-The original study folder is not modified. Separate working copies for reproduction and audit prevent results from one task influencing the other.
-
-## Inference options
-
-Local Hugging Face (default):
+Using a different Hugging Face model:
 
 ```bash
-scirepro run --backend hf --model Qwen/Qwen3-Coder-30B-A3B-Instruct --study ./my_study
+scirepro run \
+  --study ./my_study \
+  --model HuggingFaceTB/SmolLM2-1.7B-Instruct \
+  --max-turns 5 \
+  --temperature 0
 ```
 
-OpenAI-compatible inference server (e.g., local vLLM):
+Using an OpenAI-compatible inference endpoint:
 
 ```bash
 export OPENAI_BASE_URL=http://localhost:8000/v1
 export OPENAI_API_KEY=EMPTY
-scirepro run --backend openai --model your-served-model-name --study ./my_study
+
+scirepro run \
+  --study ./my_study \
+  --backend openai \
+  --model your-served-model-name
 ```
 
-The OpenAI-compatible server must support tool calls in a format accepted by the original model adapter. Arbitrary model identifiers are **not guaranteed** to support the agent's tool-calling protocol. A GPU and substantial VRAM may be needed for local Qwen models.
+The selected model must be compatible with the agent's tool-calling format.
 
-Optional run controls:
+### 4. View the Results
+
+Results are automatically saved in:
+
+```text
+outputs/<timestamp>_<model>/
+├── manifest.json
+├── reproduce/
+│   ├── transcript.json
+│   └── report.md
+└── summary.md
+```
+
+If code auditing is performed, an `audit/` directory is also generated.
+
+To view the latest reproduction report:
 
 ```bash
-scirepro run --study ./my_study --model Qwen/Qwen3-Coder-30B-A3B-Instruct \
-  --mode both --max-turns 18 --temperature 0 --output ./results
+RUN_DIR=$(ls -td outputs/*/ | head -1)
+cat "${RUN_DIR}reproduce/report.md"
 ```
 
-The underlying agent also reads `MAX_NEW_TOKENS`, `PYTHON_TIMEOUT_SECONDS`, `SEED`, `TOP_P`, `TOP_K`, `REPETITION_PENALTY` from environment variables. Temperature 0 does not guarantee bitwise-identical outputs across environments.
+## Additional Options
 
-## Automatic study preparation
+| Argument | Description |
+|---|---|
+| `--model` | Select an LLM |
+| `--backend` | `hf` or `openai` |
+| `--mode` | `auto`, `reproduce`, `audit`, `both` |
+| `--max-turns` | Maximum agent turns (default: 20) |
+| `--temperature` | Model sampling temperature |
+| `--output` | Custom results directory |
 
-SciRepro extracts searchable PDF text with `pypdf`, inventories data and analysis files, and generates a **transparent** `study.txt` task for the agent. It does **not** reliably infer a complete statistical analysis plan, extract every figure/table, or generate validated reference answers. A researcher should check extracted PDF text, especially tables, scanned pages, and mathematical notation. For rigorous benchmark comparisons, provide a curated `study.txt` and independently verified target results; keep reference answers **outside** the agent-visible study folder.
-
-### Existing `study.txt`
-
-You may include `study.txt` in your study folder to reproduce a controlled experiment. This overrides automatic instructions. For example, existing HeartSteps benchmark instructions can be reused unchanged. Keep paper/data/code accessible in the same folder.
-
-## Important evaluation distinction
-
-SciRepro **runs an agent and records evidence**. Its `report.md` and `summary.md` contain the **agent's claims**, not independently validated correctness scores. Automated ground-truth grading for arbitrary papers is not implemented in this initial release; this cannot be inferred reliably from paper text alone. For a research benchmark, compare executed results against independently established reference statistics and, for audits, a known defect inventory. Never interpret agreement between the original and agent-corrected code as proof of validity.
-
-
+By default, SciRepro runs reproduction and additionally performs code auditing when original analysis code is provided.
 
